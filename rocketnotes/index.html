@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link rel="shortcut icon" href="#">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+
+    <title>RocketNotes</title>
+
+    <script> // script to prevent FF warning
+      document.addEventListener('DOMContentLoaded', ()=>{
+        let nBody = document.querySelector('body')
+        let nIframe = document.createElement('iframe');
+        nIframe.setAttribute('name', "hidden-iframe");
+        nIframe.style.display = 'none';
+        nIframe.style.position = 'absolute';
+        nBody.appendChild(nIframe);
+      });
+    </script>
+
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx" defer></script>
+  </body>
+</html>
